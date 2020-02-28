@@ -17,7 +17,7 @@ export const Title = styled.label`
     top: 222px;     
     margin-right: 30px;
     font-size: 35px;
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Roboto', sans-serif;
     font-weight: 400;
 `
 export const Category = styled.label`
