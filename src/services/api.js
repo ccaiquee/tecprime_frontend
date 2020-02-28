@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 const api = axios.create({
-    baseURL: 'http://tecprime.com.br/api'
+    baseURL: process.env.REACT_APP_API_URL_TEC
 })
 
 
