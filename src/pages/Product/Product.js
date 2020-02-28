@@ -59,7 +59,7 @@ export default function Product(props) {
                             <Td>{prod.id}</Td>
                             <Td>{prod.nome}</Td>
                             <Td>{prod.descricao}</Td>
-                            <Td>{prod.preco}</Td>
+                            <Td>{prod.preco.toFixed(2)}</Td>
                             <Td>                                
                                 <Amount 
                                     name='quantidade'

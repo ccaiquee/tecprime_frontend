@@ -12,7 +12,7 @@ export const Container = styled.div`
    
 `
 export const Title = styled.label`
-    color: #ff5e5e;
+    color: #3fabf2;
     font-size: 34px;
     text-align: center;
     font-family: 'Roboto', sans-serif;
@@ -40,7 +40,7 @@ export const Li = styled.li`
     padding: 10px;   
     :hover{
         color: #fff;
-        background: #fa5757;
+        background: #3fabf2;
     }
 `
 

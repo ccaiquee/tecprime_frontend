@@ -5,11 +5,12 @@ import apinode from '../../services/apinode'
 
 import { ToastContainer, toast } from 'react-toastify'
 
+import Image from '../../images/Logo-access.png'
 import Input from '../../components/Input/Input'
 import Button from '../../components/Button/Button'
 import Label from '../../components/Label/Label'
 
-import { Container, Form, Title, Register } from './Styles'
+import { Container, Form, Logo, Register } from './Styles'
 
 export default function Access({ history }) {
     const [ email, setEmail ] = useState('')
@@ -36,6 +37,7 @@ export default function Access({ history }) {
 
     return (
         <Container>           
+            <Logo src={Image}/>
             <Form onSubmit={login}>                
                 <Label value='E-MAIL *'/>
                 <Input

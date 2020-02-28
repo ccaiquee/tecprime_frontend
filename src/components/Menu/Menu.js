@@ -1,8 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-import { Nav, Div, Title, Category, Container, Badge, ImageShopCart, Loggout } from './Styles'
+import { Nav, Div, Logo, Category, Container, Badge, ImageShopCart, Loggout } from './Styles'
 
+import Image from '../../images/logo.png'
 import ShopCart from '../../images/shopcart.png'
 
 export default function Menu({ history }) {
@@ -13,7 +14,7 @@ export default function Menu({ history }) {
     return (
         <Nav>
             <Div>
-                <Title>TecPrime</Title>
+                <Logo src={Image}/>
                 <Link to='/Categorias'>
                     <Category>Categorias</Category>                    
                 </Link>

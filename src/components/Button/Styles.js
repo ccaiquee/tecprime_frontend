@@ -5,7 +5,7 @@ export const ComponentButton = styled.button`
     height: 40px;
     width: 100%;
     border: none;
-    background-color: #ff5d5d;
+    background-color: #2980b9;
     bottom: 10px;
     color: #fff;
     font-size: 16px;
@@ -13,6 +13,6 @@ export const ComponentButton = styled.button`
     font-weight: 700;
 
     :hover{
-        background-color: #dd4141;
+        background-color: #1f73ab;
     }
 `

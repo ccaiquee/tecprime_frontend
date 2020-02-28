@@ -11,19 +11,18 @@ import { Container, Table, Thead, Tbody, Tr, Th, Td, Icon, Amount, Update, Foost
 
 export default function Product() {
     const [ products, setProducts ] = useState([])
-    const [ qtd, setQtd ] = useState(0)
-    const [ array, setArray ] = useState(0)
+    const [ qtd, setQtd ] = useState(0)   
     
     useEffect(() => {
         async function loadProducts(){       
             const authorization = localStorage.getItem('token')     
             const response = await apinode.get('/shoppingcart', { headers: { authorization }})            
             setProducts(response.data)
-            setArray(0)
+            
         }     
         loadProducts()
       
-    },[array])
+    },[products])
     async function removeProduct(id){        
         const authorization = localStorage.getItem('token')     
 
@@ -91,7 +90,7 @@ export default function Product() {
                                 <Update  onClick={() => decrementProduct(prod.qtd, prod.id)}>-</Update>                                                                        
                             </Td>                           
                             <Td>{prod.nome}</Td>                            
-                            <Td>{prod.preco * prod.qtd}</Td>                            
+                            <Td>{(prod.preco * prod.qtd).toFixed(2)}</Td>                            
                             <Td>
                                 <Icon src={Remove} onClick={() => removeProduct(prod.id)}/>
                                                          

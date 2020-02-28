@@ -3,7 +3,7 @@ import styled, { css } from 'styled-components'
 export const Nav = styled.nav`
     height: 50px;
     padding: 0 30px;
-    background: linear-gradient(-40deg, #ff5d5d, #ff5d5d);
+    background: #2980b9;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -12,13 +12,13 @@ export const Div = styled.div`
     margin-right: 30px;   
      
 `
-export const Title = styled.label`
+export const Logo = styled.img`
     color: #fff;
     top: 222px;     
-    margin-right: 30px;
-    font-size: 35px;
+    margin-right: 28px;
+    font-size: 33px;
     font-family: 'Roboto', sans-serif;
-    font-weight: 400;
+    font-weight: 200;
 `
 export const Category = styled.label`
     cursor: pointer;

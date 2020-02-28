@@ -21,14 +21,16 @@ export const Form = styled.form`
     flex-direction: column;    
     margin: 20px;
 `
-export const Title = styled.label`
+export const Logo = styled.img`
+     height: 70px;
+     width: 220px;
     color: #ff5e5e;
     font-size: 34px;
     text-align: center;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     margin-top: 15px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 `
 export const Register = styled.label`
     cursor: pointer;

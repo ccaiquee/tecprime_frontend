@@ -20,7 +20,7 @@ export const Thead = styled.thead`
     font-size: 14px;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
-    background: #ff5d5d;    
+    background: #3fabf2;    
 `
 export const Tr = styled.tr`
     height: 25px;
